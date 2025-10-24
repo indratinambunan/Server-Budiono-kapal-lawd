@@ -7,6 +7,9 @@ const userSchema = new mongoose.Schema({
   nama: { type: String, required: true },
   nomorHp: { type: String, required: true },
   fotoKTP: { type: String, default: null },
+  lokasi: { type: String, default: null },
+  pekerjaan: { type: String, default: null },
+  salary: { type: String, default: null },
   createdAt: { type: Date, default: Date.now }
 });
 

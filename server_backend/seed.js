@@ -9,16 +9,16 @@ mongoose.connect('mongodb://127.0.0.1:27017/jobwaroeng', {})
 
 // 🔹 Data 10 user (beberapa punya fotoKTP, beberapa tidak)
 const usersData = [
-  { email: "indra@example.com", username: "Indra", password: "indrapass", nama: "Indra Setiawan", nomorHp: "081234567890", fotoKTP: "ktp1.jpg" },
-  { email: "rahmad@example.com", username: "Rahmad", password: "rahmadpass", nama: "Rahmad Fadhil", nomorHp: "082134567891" },
-  { email: "rizky@example.com", username: "Rizky", password: "rizkypass", nama: "Rizky Ramadhan", nomorHp: "083134567892", fotoKTP: "ktp3.png" },
-  { email: "nina@example.com", username: "Nina", password: "ninapass", nama: "Nina Kartika", nomorHp: "084134567893" },
-  { email: "budi@example.com", username: "Budi", password: "budipass", nama: "Budi Santoso", nomorHp: "085134567894", fotoKTP: "ktp5.jpg" },
-  { email: "sari@example.com", username: "Sari", password: "saripass", nama: "Sari Lestari", nomorHp: "086134567895" },
-  { email: "fajar@example.com", username: "Fajar", password: "fajarpass", nama: "Fajar Prasetyo", nomorHp: "087134567896", fotoKTP: "ktp7.png" },
-  { email: "lina@example.com", username: "Lina", password: "linapass", nama: "Lina Marlina", nomorHp: "088134567897" },
-  { email: "agus@example.com", username: "Agus", password: "aguspass", nama: "Agus Setiono", nomorHp: "089134567898", fotoKTP: "ktp9.jpg" },
-  { email: "tina@example.com", username: "Tina", password: "tinapass", nama: "Tina Anggraini", nomorHp: "089934567899" }
+  { email: "indra@example.com", username: "Indra", password: "indrapass", nama: "Indra Setiawan", nomorHp: "081234567890", fotoKTP: "ktp1.jpg", lokasi: "Bandung", pekerjaan: "Barista", salary: "200000" },
+  { email: "rahmad@example.com", username: "Rahmad", password: "rahmadpass", nama: "Rahmad Fadhil", nomorHp: "082134567891", lokasi: "Bandung", pekerjaan: "Barista", salary: "250000" },
+  { email: "rizky@example.com", username: "Rizky", password: "rizkypass", nama: "Rizky Ramadhan", nomorHp: "083134567892", fotoKTP: "ktp3.png", lokasi: "Jakarta", pekerjaan: "penjaga toko", salary: "150000" },
+  { email: "nina@example.com", username: "Nina", password: "ninapass", nama: "Nina Kartika", nomorHp: "084134567893", lokasi: "Medan", pekerjaan: "kasir minimarket", salary: "270000" },
+  { email: "budi@example.com", username: "Budi", password: "budipass", nama: "Budi Santoso", nomorHp: "085134567894", fotoKTP: "ktp5.jpg", lokasi: "Bandung", pekerjaan: "Driver mobil", salary: "280000" },
+  { email: "sari@example.com", username: "Sari", password: "saripass", nama: "Sari Lestari", nomorHp: "086134567895", lokasi: "Surabaya", pekerjaan: "Staff Gudang", salary: "200000" },
+  { email: "fajar@example.com", username: "Fajar", password: "fajarpass", nama: "Fajar Prasetyo", nomorHp: "087134567896", fotoKTP: "ktp7.png", lokasi: "Bogor", pekerjaan: "Kurir Motor", salary: "390000" },
+  { email: "lina@example.com", username: "Lina", password: "linapass", nama: "Lina Marlina", nomorHp: "088134567897", lokasi: "Riau", pekerjaan: "Admin Sosial Media", salary: "100000" },
+  { email: "agus@example.com", username: "Agus", password: "aguspass", nama: "Agus Setiono", nomorHp: "089134567898", fotoKTP: "ktp9.jpg", lokasi: "Aceh", pekerjaan: "Desainer Grafis", salary: "550000" },
+  { email: "tina@example.com", username: "Tina", password: "tinapass", nama: "Tina Anggraini", nomorHp: "089934567899", lokasi: "Jakarta", pekerjaan: "Operator Produksi", salary: "900000" }
 ];
 
 // 🔹 Data 10 job (nanti userId akan diganti setelah user disimpan)
