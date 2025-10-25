@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 const jobRoutes = require('./routes/jobs'); // <-- tambahkan 'routes/'
 const userRoutes = require('./routes/user');
+const verificationRoutes = require('./routes/verification');
 
 const app = express();
 const PORT = 5000;
@@ -26,6 +27,7 @@ app.get('/', (req, res) => {
 
 app.use('/jobs', jobRoutes);
 app.use('/users', userRoutes);
+app.use('/users/verification', verificationRoutes)
 
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
