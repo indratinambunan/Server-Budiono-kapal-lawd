@@ -1,5 +1,13 @@
 const mongoose = require('mongoose');
 
+const VerificationSchema = new mongoose.Schema({
+  ktpFile: { type: String, default: null},
+  selfieFile: { type: String, default: null },
+  skckFile: { type: String, default: null },
+  stnkFile: { type: String, default: null },
+  createdAt: { type: Date, default: Date.now }
+});
+
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   username: { type: String, required: true },
@@ -10,6 +18,8 @@ const userSchema = new mongoose.Schema({
   lokasi: { type: String, default: null },
   pekerjaan: { type: String, default: null },
   salary: { type: String, default: null },
+  isVerif: {type: Boolean, default: false},
+  verifikasi: { type: VerificationSchema, default: () => ({}) },
   createdAt: { type: Date, default: Date.now }
 });
 
